@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="46326f03-d3d7-43fb-80ab-9efedcf401ed" name="site:game-of-life" url="http://ftp.jiachenren.com">
+        <fileTransfer host="ftp.jiachenren.com" port="21" rootFolder="/public_html/simulations/game-of-life">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
