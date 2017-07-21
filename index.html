@@ -1,22 +1,30 @@
+<!--Game of Life simulation by Jiachen Ren. All Rights Reserved.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Game of Life</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/dev/libs/utils.js"></script>
+    <link rel="stylesheet" type="text/css" href="../flock-animation/assets/css/site.css">
+    <link rel="stylesheet" type="text/css" href="../flock-animation/assets/css/components/text-inputs.css">
     <link rel="stylesheet" type="text/css" href="assets/css/page.css" media="screen"/>
 </head>
 <body onload="init()">
-<button onclick="step()">Step</button>
-<button onclick="addIteratingThread()">Faster</button>
-<button onclick="removeIteratingThread()">Slower</button>
-<button onclick="clearAll()">Stop</button>
-<button onclick="clearBoard()">Clear</button>
-<br>
-<input type="text" id="rows" placeholder="Rows"/>&nbsp;
-<input type="text" id="cols" placeholder="Columns"/>
-<input type="submit" value="Apply" onclick="updateCellMatrix()"/>
-<br>
-<canvas id="canvas" width="300px" height="300px">
+<h1>Welcome to Conway's Game of Life Web Canvas Implementation by Jiachen Ren</h1>
+<h2 id="controls-container">
+    <span class="controls-btn" onclick="step()">Step</span>
+    <span class="controls-btn" onclick="addIteratingThread()">Faster</span>
+    <span class="controls-btn" onclick="removeIteratingThread()">Slower</span>
+    <span class="controls-btn" onclick="clearAllThreads()">Stop</span>
+    <span class="controls-btn" onclick="clearBoard()">Clear</span>
+</h2>
+<!--<br>-->
+<!--<input type="text" id="rows" placeholder="Rows"/>&nbsp;-->
+<!--<input type="text" id="cols" placeholder="Columns"/>-->
+<!--<input type="submit" value="Apply" onclick="updateCellMatrix()"/>-->
+<!--<br>-->
+<canvas id="canvas">
     This text is displayed if the browser does not html 5.
 </canvas>
 </body>
